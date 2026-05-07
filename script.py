@@ -24,7 +24,7 @@ service = build('gmail', 'v1', credentials=creds)
 # Получаем список писем
 results = service.users().messages().list(
     userId='me',
-    q='from:noreply@eda.yandex.ru'
+    q='from:tsybulski@gmail.com'
 ).execute()
 
 messages = results.get('messages', [])
